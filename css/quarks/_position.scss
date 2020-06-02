@@ -1,0 +1,474 @@
+.suggestMenu {
+    display:block;
+    position: absolute;
+    width:1200px;
+    height: 160px;
+    z-index: 10;
+    li {
+        width: 1040px;
+        height: 32px;
+        margin-left:14px;
+        margin-top:10px;
+    }
+    li:first-child {
+        margin-top:16px;
+    }
+}
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 15px;
+}
+header{
+    display:flex;
+    align-items: center;
+    p {
+        margin-left: 8px;
+    }
+}
+.imgSuggest {
+    box-shadow:none;
+    width: 280px;
+    height: 280px;
+}
+.target {
+    padding: 0 0 0 7px;
+}
+nav {
+    width: 1200px; //Por que se sobreescribe el tamaño
+    height: 118px;
+    margin-left:6.9%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+        display:flex;
+    }
+    .menuGrey {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        button:first-child {
+            margin-bottom:10px;
+        }
+    }
+}
+.btn2, .btn4 {
+margin-left: 16px;
+}
+// <!-- Browser section -->
+section {
+    margin-left:6.9%;
+}
+.searchSection {
+    height: auto;
+    p {
+        padding:0 0 0 6px;
+    }
+    .inputBox {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        }
+    input {
+        padding: 0 0 0 16px;
+        margin-left: 15px;
+    }
+    button {
+        margin-left: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            padding: 0 10px 0 0;
+        }
+    }
+    .initialSize {
+        height: 64px;
+        display:flex;
+    }
+    .tags {
+        display:flex;
+        height: 100px;
+    }
+    .tagMore {
+        margin: 12px 8px 0 0;
+        width: auto;
+        padding: 0 7px;
+    }
+    .gradient {
+        margin-top: 3px;
+    }
+}
+.searchDiv {
+    display: flex;
+    flex-direction: column;
+    height: 99px;
+    width: 1200px;
+    margin: 0;
+}
+// <!-- Suggestions section -->
+#suggestion {
+    article {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    div {
+        margin-top:16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nameGif {
+        margin-top:3px;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        img {
+            padding:0 8px 0 0;
+        }
+    }
+    .sugGif {
+        position:relative;
+        box-shadow:none;
+        width: 280px;
+        height: 280px;
+        margin-top:2px;
+        display:flex;
+        justify-content:flex-end;
+        align-items:flex-start;
+        .btnMore {
+            position: absolute;
+            bottom: 15px;
+            left:7px;
+        }
+        img.sugImg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+// <!-- Trends section -->
+.trends {
+    margin-top:0;
+        .results {
+        height: auto;
+        margin-top: 17px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .trendContainer {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        margin: 0;
+        bottom: 0;
+        margin-bottom: 16px;
+        }
+        .trendImg {
+            flex-direction: column;
+            margin-bottom: 16px;
+            width: 294px;
+            height: 304px;
+            &:hover .trendTitle {
+                display: block;
+            }
+            }
+        .bigImg {
+            flex-direction: column;
+            margin-bottom: 16px;
+            width: 596px;
+            height: 300px;
+            &:hover .trendTitle {
+                display: block;
+            }
+            }
+        img.trendGif {
+            width: 97.7%;
+            height: 97%;
+            object-fit: cover;
+        }
+        .trendTitle {
+            position: absolute;
+            width: 97.7%;
+            margin: 0;
+            bottom: 4px;
+            display:none;
+            p {
+                padding: 0 0 0 6px;
+            }
+        }
+    }
+}
+// Show search results
+.searchResult {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    img {
+        width: 288px;
+        height: 298px;
+        display:flex;
+    }
+}
+//Positions misGifos
+.misGifos {
+    nav {
+        height: 99px;
+        width: 95.8%;
+        margin-left: 4.2%;
+        display:flex;
+        justify-content: space-between;
+        .arrow {
+            margin-right: 14px;
+        }
+        div {
+            margin-right: 9.7%;
+        }
+    }
+    .btn2 {
+        margin: 0px;
+    }
+    .menuGrey {
+        margin-left: 0px;
+    }
+    .crearGifos {
+        height: 614px;
+        display: flex;
+        justify-content: center;
+        div {
+            width: 684px;
+            margin:0px;
+            p {
+                align-self: flex-start;
+                margin-left: 73px;
+            }
+        }
+        p.description {
+            max-height: 190px;
+            line-height: 28px;
+        }
+        .nameGif {
+            margin: 3px 0 0 0;
+            width: 99%;
+            height: 24px;
+            p {
+                margin-left: 4px;
+            }
+        }
+        .crearGif {
+            margin-top: 75px;
+            height: 386px;
+            flex-direction: column;
+        }
+        .testGif {
+            margin-top: 75px;
+            height: 548px;
+            width: 860px;
+            flex-direction: column;
+        }
+        .sugGif {
+            display:flex;
+            flex-direction: column;
+        }
+        .head {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 30px;
+            width: 659px;
+            margin-left: 25px;
+            margin-bottom: 7px;
+            p {
+                margin-left: 16px;
+                line-height: 16px;
+                font-size: 16px;
+            }
+        }
+        p {
+            width: 518px;
+            padding: 0;
+            margin-left: 73px;
+        }
+        .buttons {
+            margin-top: 28px;
+            width: 304px;
+            display: flex;
+            justify-content: space-between;
+            align-self: self-end;
+            margin-left: 344px;
+            button {
+                margin:0;
+            }
+        }
+    }
+    .recordGif {
+        height: 901px;
+        width: 100%;
+        margin-left: 174px;
+        .testGif {
+        display: flex;
+        align-items: center;
+        }
+        .nameGif {
+            width: 854px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                width: auto;
+            }
+        }
+        .media {
+        overflow: hidden; //Ajustar tamaño del video al contenedor
+        margin-top:8px;
+        width: 838px;
+        height: 440px;
+        border:1px solid #979797;
+        box-shadow: 
+        inset -2px -2px #E6E6E6 ,
+        inset 2px 2px $black;
+            video, .previewVideo {
+                width: 100%;
+            }
+        }
+        .btnBox {
+            height: 73px;
+            width: 180px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            .record {
+                margin-top: 21px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .timer {
+            width: 124px;
+            height: 36px;
+            margin: 21px 528px 0 0;
+        }
+        .itemsBox {
+            height: 73px;
+            width: 838px;
+            display: flex;
+            justify-content: flex-end; 
+        }
+        .buttons {
+            margin: 21px 0 0 0;
+            width: 302px;
+        }
+        .play {
+            width: 20px;
+            height: 20px;
+            margin-right: 4px;
+        }
+        .charge {
+            margin:0;
+            width: 240px;
+            height: 22px;
+        }
+        .endTime {
+            width: 122px;
+            height: 36px;
+            margin: 21px 24px 0 0;
+        }
+        .chargeVideo {
+            width: auto;
+            margin-right: 119px;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .cancel {
+            margin-top: 21px;
+        }
+        .uploadInfo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .first {
+            width: auto;
+            max-height: 22px;
+            margin: 8px 0 39px 0;
+            align-self: auto;
+            font-size: $button-size;
+            font-weight: bold;
+            }
+        .second {
+            width: auto;
+            line-height: 14px;
+            margin: 8px 0 0 0;
+            align-self: auto;
+            font-size: $body-size;
+            .line {
+                text-decoration: line-through;
+                font-size: $body-size;
+            }
+        }
+        .uploadGif {
+            width: 721px;
+            height: 391px;
+            .media {
+                width: 371px;
+                min-width: 371px;
+                height: 196px;
+                margin: 27px 0 0 24px;
+            }
+            .nameGif {
+                width: 715px;
+                margin: 3px 0 0 3px;
+            }
+            .itemsBox {
+                width: 280px;
+                height: 364px;
+                margin: 0;
+                flex-direction: column;
+                align-items: flex-end;
+                .btnReady {
+                    margin:111px 0 44px 0;
+                }
+            }
+            .successGif {
+                display: flex;
+                flex-direction: row;
+            }
+            .btnSuccess {
+                width: 280px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                p {
+                    margin: 0 0 16px 24px;
+                }
+                .btnBig {
+                    width: 256px;
+                    margin: 0;
+                    background-color: #FFF4FD;
+                    &:first-of-type{
+                        margin-bottom: 14px;
+                    }
+                }
+            }
+        }
+        }
+    .success {
+        margin: 85px 0 0 269px;
+    }        
+    .btnClose {
+        margin-right: 10px;
+    }
+    .ownGifs {
+        height: auto;
+        width: 1200px;
+        margin: 0;
+    }
+}

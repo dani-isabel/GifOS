@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MisGifos</title>
+    <link id="changeThemes" rel="stylesheet" href="./css/mainFileDay.css">
+</head>
+
+<body class="misGifos">
+    <header class="gradient">
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+    <nav>
+        <div>
+            <img class="arrow" src="./assets/arrow.svg" alt="Flecha">
+            <img class="day" src="./assets/gifOF_logo.png" alt="GifOS-logo">
+            <img class="dark" src="./assets/gifOF_logo_dark.png" alt="GifOS-logo-dark">
+        </div>
+        <!-- Menu choose theme -->
+        <div class="hideMenu">
+            <button class="btn2">Elegir tema</button>
+            <button class="btn3" id="btn3"><img src="./assets/dropdown.svg" alt="dropdown"></button>
+            <ul class="menuGrey hide menu" id="menuGrey">
+                <button class="btnGrey" id="day">Sailor Day</button>
+                <button class="btnGrey" id="night">Sailor Night</button>
+            </ul>
+        </div>
+    </nav>
+    <section class="crearGifos">
+        <!-- Create gifs section -->
+        <div id="createGifs" class="menuGrey crearGif">
+            <div class="sugGif">
+                <div class="nameGif gradient">
+                    <p class="bold">Crear Guifos</p>
+                </div>
+                <div class="head">
+                    <img src="./assets/window img.png" alt="window">
+                    <p><b>Aquí podrás crear tus propios guifos</b></p>
+                </div>
+                <p class="description">Crear tu <b>guifo</b> es muy fácil, graba cualquier imagen con tu cámara y obtén
+                    guifos
+                    personalizados. Los pasos para crear tu guifo son: <br>
+                    <b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso) <br>
+                    <b>2)</b> Capturar tu momento guifo <br>
+                    <b>3)</b> Revisar el momento <br>
+                    <b>4)</b> Listo para subir y compartir!<br>
+                    ¿Quieres comenzar a crear <b>guifo</b> ahora? <br></p>
+                <div class="buttons">
+                    <button>Cancelar</button>
+                    <button id="btnStart">Comenzar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Record gifs section -->
+        <section id="recordGif" class="recordGif hide">
+            <div>
+                <div class="menuGrey testGif">
+                    <div class="nameGif gradient">
+                        <p class="bold">Un Chequeo Antes de Empezar</p>
+                        <button class="btnClose"><img src="./assets/button3.svg" alt="close"></button>
+                    </div>
+                    <div class="media">
+                        <video id="preVideo" src=""></video>
+                    </div>
+                    <div class="itemsBox">
+                        <div class="btnBox">
+                            <button class="record"><img src="./assets/camera.svg" alt="dropdown"></button>
+                            <button class="record" id="record">Capturar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start record Gif -->
+        <section id="startRecord" class="recordGif hide">
+            <div class="menuGrey testGif">
+                <div class="nameGif gradient">
+                    <p class="bold">Capturando Tu Guifo</p>
+                    <button class="btnClose"><img src="./assets/button3.svg" alt="close"></button>
+                </div>
+                <div class="media">
+                    <video id="startVideo" src=""></video>
+                </div>
+                <div class="itemsBox">
+                    <div class="timer media">
+                    </div>
+                    <div class="btnBox">
+                        <button class="record ready"><img src="./assets/recording.svg" alt="dropdown"></button>
+                        <button class="record ready" id="ready">Listo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Preview Screen -->
+        <section id="preview" class="recordGif hide">
+            <div class="menuGrey testGif">
+                <div class="nameGif gradient">
+                    <p class="bold">Vista Previa</p>
+                    <button class="btnClose"><img src="./assets/button3.svg" alt="close"></button>
+                </div>
+                <div class="media">
+                    <img id="previewVideo" class="previewVideo" src="" alt="Preview gift">
+                </div>
+                <div class="itemsBox">
+                    <div class="endTime media"></div>
+                    <div class="chargeVideo">
+                        <button class="play"><img src="./assets/forward.svg" alt="play button"></button>
+                        <div class="charge media"></div>
+                    </div>
+                    <div class="buttons">
+                        <button>Repetir Captura</button>
+                        <button id="btnUpload">Subir Guifo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Upload Gif -->
+        <section id="upload" class="recordGif hide">
+            <div class="menuGrey testGif">
+                <div class="nameGif gradient">
+                    <p class="bold">Subiendo Guifo</p>
+                    <button class="btnClose"><img src="./assets/button3.svg" alt="close"></button>
+                </div>
+                <div class="media uploadInfo">
+                    <img src="./assets/globe_img.png" alt="Globe">
+                    <p class="uploadText first">Estamos subiendo tu guifo…</p>
+                    <div class="charge media">
+                        <div class="chargeBox"></div>
+                    </div>
+                    <p class="uploadText second">Tiempo restante: <span class="line">38 años</span> algunos minutos</p>
+                </div>
+                <div class="itemsBox">
+                    <button id="cancel" class="cancel">Cancelar</button>
+                </div>
+            </div>
+        </section>
+        <!-- Success gif load -->
+        <section id="success" class="recordGif success hide">
+            <div class="menuGrey uploadGif">
+                <div class="nameGif gradient">
+                    <p class="bold">Guifo Subido Con Éxito</p>
+                    <button class="btnClose"><img src="./assets/button3.svg" alt="close"></button>
+                </div>
+                <div class="successGif">
+                    <div class="media">
+                        <img src="" alt="gif">
+                    </div>
+                    <div class="itemsBox">
+                        <div class="btnSuccess">
+                            <p>Guifo creado con éxito</p>
+                            <button class="btnBig">Copiar Enlace Guifo</button>
+                            <button class="btnBig" id="btnStart">Descargar Guifo</button>
+                        </div>
+                        <button class="btnReady">Listo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="ownGifs">
+        <p class="target">Mis guifos</p>
+        <div  id="showGifs" class="ownGifs"></div>
+    </section>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script type="text/javascript" src="./js/misGifos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+// General style
+$font: "Chakra Petch", sans-serif;
+$body-size: 12px;
+$title-size: 14px;
+$button-size: 16px;
+$bold: 700;
+$border-button: #110038; ;  
+$border-button-more: #4C2F99;
+$black: #000000;
+$white: #FFFFFF;
+// Sailor day theme
+    $backgroundDay: #fef4f9;
+    $gradient-day: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    // Button porperties
+    $fill-button: #F7C9F3;
+    $shadow: #80687D;
+    // Button see more properties
+    $fill-bt-more: #4180F6;
+    $shadow-more: #284F99;
+    // Browse style
+    $browse-fill: #E6E6E6;
+    $browse-shadow: #B4B4B4;
+    //Grey buttons
+    $grey-fill:#F0F0F0;
+    $grey-border:#808080;
+// Sailor night theme
+    $gradient-dark: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    $backgroundDark: #1b1534;
+    // Button porperties
+    $fill-dark: #EE3EFE;
+    $shadow-dark: #80687D;
+    // Button see more properties
+    $fill-dark-more: #2E32FB;
+    $shadow-dark-more: #2124B3;
+    // Browse style
+    $browse-fill-dark: #B4B4B4;
+    $browse-shadow-dark: #8F8F8F;

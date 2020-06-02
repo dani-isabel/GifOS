@@ -1,0 +1,1169 @@
+body {
+  background-color: #1b1534;
+}
+
+.gradient {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.btnGrey {
+  color: #110038;
+  background-color: #CCCCCC;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px #B4B4B4, inset 1px 1px #FFFFFF;
+          box-shadow: inset -1px -1px #B4B4B4, inset 1px 1px #FFFFFF;
+}
+
+.menuGrey {
+  background-color: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px #8F8F8F, inset 2px 2px #FFFFFF;
+          box-shadow: inset -2px -2px #8F8F8F, inset 2px 2px #FFFFFF;
+}
+
+.target {
+  border: 1px solid #2E32FB;
+  -webkit-box-shadow: inset -2px -2px #E6DCE4, inset 2px 2px #110038;
+          box-shadow: inset -2px -2px #E6DCE4, inset 2px 2px #110038;
+}
+
+.btnMore {
+  background-color: #2E32FB;
+  -webkit-box-shadow: inset -2px -2px #2124B3, inset 2px 2px #FFFFFF;
+          box-shadow: inset -2px -2px #2124B3, inset 2px 2px #FFFFFF;
+}
+
+.btnMore:hover {
+  background-color: #2629CC;
+}
+
+.themeActive {
+  width: 150px;
+  background-color: #2E32FB;
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px #E6DCE4, inset 1px 1px #FFFFFF;
+          box-shadow: inset -1px -1px #E6DCE4, inset 1px 1px #FFFFFF;
+}
+
+.themeActive::first-letter {
+  text-decoration: underline;
+}
+
+.themeActive:hover, .themeActive:active {
+  outline: none;
+}
+
+nav .dark {
+  width: 102.6px;
+}
+
+nav .day {
+  display: none;
+}
+
+nav button {
+  color: #FFFFFF;
+  background-color: #EE3EFE;
+  -webkit-box-shadow: inset -1px -1px #A72CB3, inset 1px 1px #FFFFFF;
+          box-shadow: inset -1px -1px #A72CB3, inset 1px 1px #FFFFFF;
+}
+
+nav .btn1:hover, nav .btn1:active, nav .btn2:hover, nav .btn2:active, nav .btn3:hover, nav .btn3:active {
+  background-color: #CE36DB;
+  outline-color: #110038;
+}
+
+nav .btn3 img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+nav .btn4:hover {
+  outline-color: #FFFFFF;
+}
+
+nav .btnGrey:hover, nav .btnGrey:active {
+  color: white;
+  outline: none;
+  background-color: #2E32FB;
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px #E6DCE4, inset 1px 1px #FFFFFF;
+          box-shadow: inset -1px -1px #E6DCE4, inset 1px 1px #FFFFFF;
+}
+
+nav .btnGrey:hover::first-letter, nav .btnGrey:active::first-letter {
+  text-decoration: underline;
+}
+
+section .btnSearch {
+  color: #8F8F8F;
+  background-color: #B4B4B4;
+}
+
+section .btnSearch img {
+  -webkit-filter: invert(30%);
+          filter: invert(30%);
+}
+
+section .btnSearch:active {
+  color: #FFFFFF;
+  background-color: #CE36DB;
+  -webkit-box-shadow: inset -1px -1px #A72CB3, inset 1px 1px #FFFFFF;
+          box-shadow: inset -1px -1px #A72CB3, inset 1px 1px #FFFFFF;
+}
+
+section .btnSearch:active img {
+  -webkit-filter: invert(0%);
+          filter: invert(0%);
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+}
+
+section .btnActive {
+  color: #110038;
+  background-color: #EE3EFE;
+  -webkit-box-shadow: inset -1px -1px #A72CB3, inset 1px 1px #FFFFFF;
+          box-shadow: inset -1px -1px #A72CB3, inset 1px 1px #FFFFFF;
+}
+
+section .btnActive img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.trendContainer:hover {
+  background-color: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px #8F8F8F, inset 2px 2px #FFFFFF;
+          box-shadow: inset -2px -2px #8F8F8F, inset 2px 2px #FFFFFF;
+}
+
+.misGifos .buttons button {
+  background-color: #CCCCCC;
+  -webkit-box-shadow: inset -1px -1px #997D97, inset 1px 1px #FFFFFF;
+          box-shadow: inset -1px -1px #997D97, inset 1px 1px #FFFFFF;
+}
+
+.misGifos .buttons button:nth-child(2) {
+  background-color: #EE3EFE;
+}
+
+.misGifos .record {
+  background-color: #EE3EFE;
+}
+
+.misGifos .record:first-child {
+  width: 36px;
+}
+
+.misGifos .itemsBox button {
+  background-color: #EE3EFE;
+}
+
+.misGifos .btnReady {
+  color: #FFFFFF;
+}
+
+.suggestMenu {
+  display: block;
+  position: absolute;
+  width: 1200px;
+  height: 160px;
+  z-index: 10;
+}
+
+.suggestMenu li {
+  width: 1040px;
+  height: 32px;
+  margin-left: 14px;
+  margin-top: 10px;
+}
+
+.suggestMenu li:first-child {
+  margin-top: 16px;
+}
+
+li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 15px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header p {
+  margin-left: 8px;
+}
+
+.imgSuggest {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 280px;
+  height: 280px;
+}
+
+.target {
+  padding: 0 0 0 7px;
+}
+
+nav {
+  width: 1200px;
+  height: 118px;
+  margin-left: 6.9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .menuGrey {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .menuGrey button:first-child {
+  margin-bottom: 10px;
+}
+
+.btn2, .btn4 {
+  margin-left: 16px;
+}
+
+section {
+  margin-left: 6.9%;
+}
+
+.searchSection {
+  height: auto;
+}
+
+.searchSection p {
+  padding: 0 0 0 6px;
+}
+
+.searchSection .inputBox {
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchSection input {
+  padding: 0 0 0 16px;
+  margin-left: 15px;
+}
+
+.searchSection button {
+  margin-left: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchSection button img {
+  padding: 0 10px 0 0;
+}
+
+.searchSection .initialSize {
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.searchSection .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+}
+
+.searchSection .tagMore {
+  margin: 12px 8px 0 0;
+  width: auto;
+  padding: 0 7px;
+}
+
+.searchSection .gradient {
+  margin-top: 3px;
+}
+
+.searchDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 99px;
+  width: 1200px;
+  margin: 0;
+}
+
+#suggestion article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#suggestion div {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#suggestion .nameGif {
+  margin-top: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#suggestion .nameGif img {
+  padding: 0 8px 0 0;
+}
+
+#suggestion .sugGif {
+  position: relative;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 280px;
+  height: 280px;
+  margin-top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#suggestion .sugGif .btnMore {
+  position: absolute;
+  bottom: 15px;
+  left: 7px;
+}
+
+#suggestion .sugGif img.sugImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.trends {
+  margin-top: 0;
+}
+
+.trends .results {
+  height: auto;
+  margin-top: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trends .results .trendContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  bottom: 0;
+  margin-bottom: 16px;
+}
+
+.trends .results .trendImg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+  width: 294px;
+  height: 304px;
+}
+
+.trends .results .trendImg:hover .trendTitle {
+  display: block;
+}
+
+.trends .results .bigImg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+  width: 596px;
+  height: 300px;
+}
+
+.trends .results .bigImg:hover .trendTitle {
+  display: block;
+}
+
+.trends .results img.trendGif {
+  width: 97.7%;
+  height: 97%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.trends .results .trendTitle {
+  position: absolute;
+  width: 97.7%;
+  margin: 0;
+  bottom: 4px;
+  display: none;
+}
+
+.trends .results .trendTitle p {
+  padding: 0 0 0 6px;
+}
+
+.searchResult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.searchResult img {
+  width: 288px;
+  height: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.misGifos nav {
+  height: 99px;
+  width: 95.8%;
+  margin-left: 4.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.misGifos nav .arrow {
+  margin-right: 14px;
+}
+
+.misGifos nav div {
+  margin-right: 9.7%;
+}
+
+.misGifos .btn2 {
+  margin: 0px;
+}
+
+.misGifos .menuGrey {
+  margin-left: 0px;
+}
+
+.misGifos .crearGifos {
+  height: 614px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.misGifos .crearGifos div {
+  width: 684px;
+  margin: 0px;
+}
+
+.misGifos .crearGifos div p {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 73px;
+}
+
+.misGifos .crearGifos p.description {
+  max-height: 190px;
+  line-height: 28px;
+}
+
+.misGifos .crearGifos .nameGif {
+  margin: 3px 0 0 0;
+  width: 99%;
+  height: 24px;
+}
+
+.misGifos .crearGifos .nameGif p {
+  margin-left: 4px;
+}
+
+.misGifos .crearGifos .crearGif {
+  margin-top: 75px;
+  height: 386px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.misGifos .crearGifos .testGif {
+  margin-top: 75px;
+  height: 548px;
+  width: 860px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.misGifos .crearGifos .sugGif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.misGifos .crearGifos .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 30px;
+  width: 659px;
+  margin-left: 25px;
+  margin-bottom: 7px;
+}
+
+.misGifos .crearGifos .head p {
+  margin-left: 16px;
+  line-height: 16px;
+  font-size: 16px;
+}
+
+.misGifos .crearGifos p {
+  width: 518px;
+  padding: 0;
+  margin-left: 73px;
+}
+
+.misGifos .crearGifos .buttons {
+  margin-top: 28px;
+  width: 304px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: self-end;
+      align-self: self-end;
+  margin-left: 344px;
+}
+
+.misGifos .crearGifos .buttons button {
+  margin: 0;
+}
+
+.misGifos .recordGif {
+  height: 901px;
+  width: 100%;
+  margin-left: 174px;
+}
+
+.misGifos .recordGif .testGif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.misGifos .recordGif .nameGif {
+  width: 854px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.misGifos .recordGif .nameGif p {
+  width: auto;
+}
+
+.misGifos .recordGif .media {
+  overflow: hidden;
+  margin-top: 8px;
+  width: 838px;
+  height: 440px;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px #E6E6E6, inset 2px 2px #000000;
+          box-shadow: inset -2px -2px #E6E6E6, inset 2px 2px #000000;
+}
+
+.misGifos .recordGif .media video, .misGifos .recordGif .media .previewVideo {
+  width: 100%;
+}
+
+.misGifos .recordGif .btnBox {
+  height: 73px;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.misGifos .recordGif .btnBox .record {
+  margin-top: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.misGifos .recordGif .timer {
+  width: 124px;
+  height: 36px;
+  margin: 21px 528px 0 0;
+}
+
+.misGifos .recordGif .itemsBox {
+  height: 73px;
+  width: 838px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.misGifos .recordGif .buttons {
+  margin: 21px 0 0 0;
+  width: 302px;
+}
+
+.misGifos .recordGif .play {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.misGifos .recordGif .charge {
+  margin: 0;
+  width: 240px;
+  height: 22px;
+}
+
+.misGifos .recordGif .endTime {
+  width: 122px;
+  height: 36px;
+  margin: 21px 24px 0 0;
+}
+
+.misGifos .recordGif .chargeVideo {
+  width: auto;
+  margin-right: 119px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.misGifos .recordGif .cancel {
+  margin-top: 21px;
+}
+
+.misGifos .recordGif .uploadInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.misGifos .recordGif .first {
+  width: auto;
+  max-height: 22px;
+  margin: 8px 0 39px 0;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.misGifos .recordGif .second {
+  width: auto;
+  line-height: 14px;
+  margin: 8px 0 0 0;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+  font-size: 12px;
+}
+
+.misGifos .recordGif .second .line {
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.misGifos .recordGif .uploadGif {
+  width: 721px;
+  height: 391px;
+}
+
+.misGifos .recordGif .uploadGif .media {
+  width: 371px;
+  min-width: 371px;
+  height: 196px;
+  margin: 27px 0 0 24px;
+}
+
+.misGifos .recordGif .uploadGif .nameGif {
+  width: 715px;
+  margin: 3px 0 0 3px;
+}
+
+.misGifos .recordGif .uploadGif .itemsBox {
+  width: 280px;
+  height: 364px;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.misGifos .recordGif .uploadGif .itemsBox .btnReady {
+  margin: 111px 0 44px 0;
+}
+
+.misGifos .recordGif .uploadGif .successGif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.misGifos .recordGif .uploadGif .btnSuccess {
+  width: 280px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.misGifos .recordGif .uploadGif .btnSuccess p {
+  margin: 0 0 16px 24px;
+}
+
+.misGifos .recordGif .uploadGif .btnSuccess .btnBig {
+  width: 256px;
+  margin: 0;
+  background-color: #FFF4FD;
+}
+
+.misGifos .recordGif .uploadGif .btnSuccess .btnBig:first-of-type {
+  margin-bottom: 14px;
+}
+
+.misGifos .success {
+  margin: 85px 0 0 269px;
+}
+
+.misGifos .btnClose {
+  margin-right: 10px;
+}
+
+.misGifos .ownGifs {
+  height: auto;
+  width: 1200px;
+  margin: 0;
+}
+
+* {
+  font-family: "Chakra Petch", sans-serif;
+  color: #110038;
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gradient {
+  height: 24px;
+}
+
+.btnGrey {
+  height: 36px;
+  outline-style: none;
+}
+
+.bold {
+  padding: 0 0 3px 6px;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+
+.target {
+  width: 1192px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 32px;
+  background-color: #FFFAFE;
+}
+
+.btnMore {
+  outline-style: none;
+  width: 81px;
+  height: 34px;
+  color: #FFFFFF;
+  font-size: 14px;
+  border: 1px solid #4C2F99;
+}
+
+.btnMore:hover {
+  outline-style: dotted;
+  outline-offset: -4px;
+  outline-width: 1px;
+  outline-color: #110038;
+}
+
+.btnClose {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+header {
+  height: 23px;
+  width: 100%;
+  -webkit-box-shadow: 0px 1px #110038;
+          box-shadow: 0px 1px #110038;
+}
+
+header p {
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+nav button {
+  outline: none;
+  height: 36px;
+  width: 144px;
+  border: 1px solid #110038;
+  font-size: 16px;
+}
+
+nav button:hover, nav button:active {
+  outline-style: dotted;
+  outline-offset: -4px;
+  outline-width: 1px;
+}
+
+nav .btn2 {
+  width: 131px;
+}
+
+nav .btn3 {
+  width: 36px;
+}
+
+nav .btn4 {
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 95px;
+  height: 32px;
+  text-align: left;
+}
+
+nav .btn4:hover {
+  outline-offset: 0px;
+  background-color: transparent;
+}
+
+nav .btn4::first-letter {
+  text-decoration: underline;
+}
+
+nav .menuGrey {
+  position: absolute;
+  margin-top: 36px;
+  margin-left: 158px;
+  width: 169px;
+  height: 102px;
+}
+
+nav .menuGrey .btnGrey {
+  width: 150px;
+}
+
+nav .menuGrey .btnGrey:hover {
+  outline: none;
+}
+
+nav .menuGrey .btnGrey:active {
+  outline: none;
+}
+
+nav .menuGrey .btnGrey:active::first-letter {
+  text-decoration: underline;
+}
+
+section {
+  width: 1200px;
+}
+
+section div {
+  width: 1194px;
+  margin-left: 3px;
+}
+
+section p {
+  line-height: 24px;
+}
+
+section input {
+  width: 1039px;
+  height: 48px;
+  outline: none;
+  color: #B4B4B4;
+  font-size: 16px;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px #E6E6E6, inset 2px 2px #000000;
+          box-shadow: inset -2px -2px #E6E6E6, inset 2px 2px #000000;
+}
+
+section .btnSearch {
+  width: 102px;
+  font-size: 16px;
+}
+
+section .btnSearch:active {
+  outline: none;
+  border: 1px solid #110038;
+  outline-color: #110038;
+  outline-style: dotted;
+  outline-offset: -4px;
+  outline-width: 1px;
+}
+
+section .btnGrey:active {
+  outline-color: #110038;
+  outline-style: dotted;
+  outline-offset: -4px;
+  outline-width: 1px;
+}
+
+#suggestion {
+  height: 425px;
+}
+
+#suggestion div {
+  margin-left: 0;
+  width: 288px;
+  height: 313px;
+  background-color: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px #B4B4B4, inset 2px 2px #FFFFFF;
+          box-shadow: inset -2px -2px #B4B4B4, inset 2px 2px #FFFFFF;
+}
+
+#suggestion div .nameGif {
+  height: 24px;
+  width: 280px;
+  margin-left: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.misGifos p {
+  font-size: 14px;
+}
+
+.misGifos section button {
+  outline: none;
+  height: 36px;
+  width: 144px;
+  border: 1px solid #110038;
+  font-size: 16px;
+  -webkit-box-shadow: inset -1px -1px #997D97, inset 1px 1px #FFFFFF;
+          box-shadow: inset -1px -1px #997D97, inset 1px 1px #FFFFFF;
+}
+
+.misGifos section button:hover, .misGifos section button:active {
+  outline-style: dotted;
+  outline-offset: -4px;
+  outline-width: 1px;
+}
+
+.misGifos .btnClose {
+  height: 14px;
+  width: 16px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.misGifos .recordGif .ready {
+  background-color: #FF6161;
+  color: #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px #993A3A, inset 1px 1px #FFFFFF;
+          box-shadow: inset -1px -1px #993A3A, inset 1px 1px #FFFFFF;
+}
+
+.misGifos .recordGif .timer, .misGifos .recordGif .endTime, .misGifos .recordGif .uploadInfo {
+  background-color: #FFFFFF;
+}
+
+.misGifos .recordGif .second, .misGifos .recordGif .line {
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.misGifos .recordGif .btnSuccess p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+/*# sourceMappingURL=mainFileDark.css.map */

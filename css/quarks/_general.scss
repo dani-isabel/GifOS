@@ -1,0 +1,224 @@
+* {
+    font-family: $font;
+    color:$border-button;
+    margin:0;
+    padding:0;
+}
+.hide {
+    display:none;
+}
+.active {
+    display:flex;
+}
+.gradient {
+    height: 24px;
+}
+.btnGrey {
+    height: 36px;
+    outline-style:none;
+}
+.bold { 
+    padding: 0 0 3px 6px;
+    font-size: $title-size;
+    color:$white;
+    font-weight: 600;
+    padding-bottom:3px;
+}
+.target {
+    width: 1192px;
+    height: 32px;
+    font-size: 14px; 
+    line-height: 32px;
+    background-color: #FFFAFE;
+}
+.btnMore {
+    outline-style:none;
+    width: 81px;
+    height: 34px;
+    color: $white;
+    font-size: 14px;
+    border:1px solid $border-button-more;
+    &:hover{
+        outline-style: dotted;
+        outline-offset:-4px;
+        outline-width: 1px;
+        outline-color: $border-button;
+    }
+}
+.btnClose{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+header {
+    height: 23px;
+    width: 100%;
+    box-shadow: 0px 1px $border-button;
+    p {
+        font-size: $body-size;  
+        color:$white;
+    }
+}
+nav {
+button {
+    outline: none;
+    height: 36px;
+    width: 144px;
+    border:1px solid $border-button;
+    font-size: $button-size;
+    &:hover, &:active {
+        outline-style: dotted;
+        outline-offset:-4px;
+        outline-width: 1px;
+    }
+}
+.btn2{
+    width: 131px;
+}
+.btn3 { //Como hacer para que al activarse despliegue las opciones con Javascript
+    width: 36px;
+}
+.btn4 {//Mis gifos
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    width: 95px;
+    height: 32px;
+    text-align: left;
+    &:hover{
+        outline-offset: 0px;
+        background-color: transparent;
+    }
+    &::first-letter {
+        text-decoration: underline;
+    }
+}
+.menuGrey {
+    position:absolute;
+    margin-top:36px;
+    margin-left:158px;
+    width: 169px;
+    height: 102px;
+    .btnGrey {
+        width: 150px;
+        &:hover {
+            outline: none;
+        }
+        &:active{
+            outline: none;
+            &::first-letter { // TO-DO revisar porque no esta funcionando
+                text-decoration: underline;
+            }
+        }
+    }
+}
+}
+section {
+    width: 1200px;
+div {
+    width: 1194px;
+    margin-left: 3px;
+}
+p{
+    line-height: 24px;
+}
+input {
+    width: 1039px;
+    height: 48px;
+    outline: none;
+    color:$browse-shadow;//Color tipografia
+    font-size: 16px;
+    border:1px solid #979797;
+    box-shadow: 
+        inset -2px -2px #E6E6E6 ,
+        inset 2px 2px $black;
+}
+.btnSearch {
+    width: 102px;
+    font-size: 16px;//Falta estilo del botón cuando el usuario esta buscando
+    &:active{
+        outline:none;
+        border:1px solid $border-button;
+        outline-color:$border-button;
+        outline-style: dotted;
+        outline-offset:-4px;
+        outline-width: 1px;
+    }
+}
+.btnGrey {
+    &:active {
+        outline-color:$border-button;
+        outline-style: dotted;
+        outline-offset:-4px;
+        outline-width: 1px;
+    }
+}
+}
+#suggestion {
+    height: 425px;
+    div {
+        margin-left:0;
+        width: 288px;
+        height: 313px;
+        background-color: $browse-fill;
+        box-shadow: 
+            inset -2px -2px $browse-shadow ,
+            inset 2px 2px $white;
+        .nameGif {
+            height: 24px;
+            width: 280px;
+            margin-left:0;
+            box-shadow:none;
+        }
+    }
+}
+//General style misGifos
+.misGifos {
+    p {
+        font-size: 14px;
+    }
+    section {
+        button {
+            outline: none;
+            height: 36px;
+            width: 144px;
+            border:1px solid $border-button;
+            font-size: $button-size;
+            box-shadow: inset -1px -1px #997D97, inset 1px 1px $white;
+            &:hover, &:active {
+                outline-style: dotted;
+                outline-offset:-4px;
+                outline-width: 1px;
+            }
+        }
+    }
+    .btnClose{
+        height: 14px;
+        width: 16px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+    //Start recording
+    .recordGif {
+        .ready {
+            background-color: #FF6161;
+            color: $white;
+            box-shadow: inset -1px -1px #993A3A, inset 1px 1px $white;
+        }
+        .timer, .endTime, .uploadInfo {
+            background-color: $white;
+        }
+        .second, .line {
+            color: rgba(0, 0, 0, 0.64);
+        }
+        .btnSuccess {
+            p {
+                font-weight: $bold;
+                font-size: $button-size;
+                line-height: 22px;
+            }
+        }
+    }
+    
+}

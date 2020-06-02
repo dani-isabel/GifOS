@@ -1,0 +1,162 @@
+@import "../utilities/_variables";
+body {
+    background-color: $backgroundDark;
+}
+.gradient {
+    background-image: $gradient-dark;
+}
+.btnGrey {
+    color: $border-button;
+    background-color: #CCCCCC;
+    border:1px solid $grey-border;
+    box-shadow: 
+        inset -1px -1px $browse-shadow,
+        inset 1px 1px $white;
+}
+.menuGrey {
+    background-color: $browse-fill-dark;
+    box-shadow: 
+        inset -2px -2px $browse-shadow-dark,
+        inset 2px 2px $white;
+}
+.target {
+    border:1px solid $fill-dark-more;
+    box-shadow: 
+        inset -2px -2px #E6DCE4,
+        inset 2px 2px $border-button;
+}
+.btnMore {
+    background-color: $fill-dark-more;
+    box-shadow: 
+        inset -2px -2px $shadow-dark-more,
+        inset 2px 2px $white;
+    &:hover{
+        background-color: #2629CC;
+    }
+}
+//Clase que se agrega con javacript cuando esta seleccionado el theme dark
+.themeActive {
+    width: 150px;
+    background-color: $fill-dark-more;
+    border:1px solid $white;
+    box-shadow: 
+        inset -1px -1px #E6DCE4,
+        inset 1px 1px $white;
+        &::first-letter {
+            text-decoration: underline;
+        }
+    &:hover, &:active {
+        outline: none;
+    }
+}
+nav {
+    .dark {
+        width: 102.6px;
+    }
+    .day {
+        display:none;
+    }
+    button {
+        color: $white;
+        background-color: $fill-dark;
+        box-shadow: 
+        inset -1px -1px #A72CB3,
+        inset 1px 1px $white;
+        }
+    .btn1, .btn2, .btn3  {
+        &:hover, &:active {
+            background-color: #CE36DB;
+            outline-color: $border-button;
+        }
+    }
+    .btn3 {
+        img {
+            filter: invert(100%);
+        }
+    }
+    .btn4 {
+        &:hover{
+            outline-color: $white;
+        }
+    }
+    .btnGrey {
+        &:hover, &:active {
+            color: white;
+            outline: none;
+            background-color: $fill-dark-more;
+            border:1px solid $white;
+            box-shadow: 
+            inset -1px -1px #E6DCE4,
+            inset 1px 1px $white;
+            &::first-letter {
+                text-decoration: underline;
+            }
+        }
+    }
+    }
+section {
+    .btnSearch {
+        color:$browse-shadow-dark;
+        background-color:$browse-shadow;
+        img {
+            filter: invert(30%);
+        }
+        &:active{
+            color:$white;
+            background-color:#CE36DB;
+            box-shadow: 
+            inset -1px -1px #A72CB3,
+            inset 1px 1px $white;
+            img {
+                filter: invert(0%);
+                filter: brightness(200%);
+            }
+        }
+    }
+    .btnActive {
+        color:$border-button;
+        background-color: $fill-dark;
+        box-shadow: 
+            inset -1px -1px #A72CB3,
+            inset 1px 1px $white;
+            img {
+                filter: invert(100%);
+            }
+    }
+}
+.trendContainer {
+    &:hover {
+        background-color: $browse-fill-dark;
+        box-shadow: 
+        inset -2px -2px $browse-shadow-dark,
+        inset 2px 2px $white;
+    }
+}
+//General style misGifos
+.misGifos {
+    .buttons {
+        button {
+            background-color: #CCCCCC;
+            box-shadow: 
+            inset -1px -1px #997D97,
+            inset 1px 1px $white;
+            &:nth-child(2) {
+                background-color: $fill-dark;
+            }
+        }
+    }
+    .record {
+        background-color: $fill-dark;
+        &:first-child {
+            width: 36px;
+        }
+    }
+    .itemsBox {
+        button {
+            background-color: $fill-dark;
+        }
+    }
+    .btnReady {
+        color: $white;
+    }
+}

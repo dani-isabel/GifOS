@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GifOS</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link id="changeThemes" rel="stylesheet" href="./css/mainFileDay.css">
+    <link rel="stylesheet" href="./assets/camera.svg">
+</head>
+<body>
+    <header class="gradient">
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+    <nav>
+        <img class="day" src="./assets/gifOF_logo.png" alt="GifOS-logo">
+        <img class="dark" src="./assets/gifOF_logo_dark.png" alt="GifOS-logo-dark">
+        <div class="hideMenu">
+            <button class="btn1">Crear Guifos</button>
+            <button class="btn2">Elegir tema</button>
+            <button class="btn3" id="btn3"><img src="./assets/dropdown.svg" alt="dropdown"></button>
+            <button class="btn4">Mis Guifos</button>
+            <!-- Menu choose theme -->
+            <ul class="menuGrey hide menu" id="menuGrey">
+            <button class="btnGrey" id="day">Sailor Day</button>
+            <button class="btnGrey" id="night">Sailor Night</button>
+            </ul>
+        </div>
+    </nav>
+    <!-- Browser section -->
+    <section class="searchSection">
+        <div class="menuGrey searchDiv">
+            <div class="gradient">
+                <p class="bold">Buscar</p>
+            </div>
+            <div class="inputBox">
+            <input id="enterGif" type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+            <button id="searchGif" class="btnGrey btnSearch"><img src="./assets/lupa_inactive.svg" alt="lupa">Buscar</button>
+            </div>
+        </div>
+        <ul class="menu menuGrey hide" id="menuSuggest">
+        </ul>
+        <div id="tags" class="initialSize">
+        </div>
+    </section>
+    <section id="suggestion">
+        <!-- Suggestions section -->
+        <p class="target">Hoy te sugerimos:</p>
+        <article>
+            <div>
+                <div class="nameGif gradient">
+                </div>
+                <div class="sugGif">
+                </div>
+            </div>
+            <div>
+                <div class="nameGif gradient">
+                </div>
+                <div class="sugGif">
+                </div>
+            </div>
+            <div>
+                <div class="nameGif gradient">
+                </div>
+                <div class="sugGif">
+                </div>
+            </div>
+            <div>
+                <div class="nameGif gradient">
+                </div>
+                <div class="sugGif">
+                </div>
+            </div>
+        </article>
+        <!-- Falta poner lo que permite ver el gift -->
+    </section>
+     <!-- Trends section -->
+    <section class="trends">
+        <p class="target" id="changeTitle">Tendencias:</p>
+        <div id="trends" class="results">
+        </div>
+    </section>
+    <script type="text/javascript" src="./js/home.js"></script>
+</body>
+
+</html>

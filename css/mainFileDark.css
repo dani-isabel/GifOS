@@ -911,6 +911,82 @@ section {
   margin: 0;
 }
 
+.misGifos .ownGifs {
+  height: auto;
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.misGifos .trendContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  bottom: 0;
+  margin-bottom: 16px;
+}
+
+.misGifos .trendImg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+  width: 294px;
+  height: 304px;
+}
+
+.misGifos .trendImg:hover .trendTitle {
+  display: block;
+}
+
+.misGifos .bigImg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+  width: 596px;
+  height: 300px;
+}
+
+.misGifos .bigImg:hover .trendTitle {
+  display: block;
+}
+
+.misGifos img.trendGif {
+  width: 97.7%;
+  height: 97%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.misGifos .trendTitle {
+  position: absolute;
+  width: 97.7%;
+  margin: 0;
+  bottom: 4px;
+  display: none;
+}
+
+.misGifos .trendTitle p {
+  padding: 0 0 0 6px;
+}
+
 * {
   font-family: "Chakra Petch", sans-serif;
   color: #110038;

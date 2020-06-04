@@ -1,5 +1,10 @@
 //Variables
 const apiKey = "u5MxvUvtwc9acidnSviI4nlHRNOIHx44";
+var getLocalGifs = localStorage.getItem("misGifos");
+//Init myGifs visualization
+window.onload = function() {
+  getMyGifs(getLocalGifs)
+};
 //Come back to index
 let backHome = document.querySelector(".arrow");
 backHome.addEventListener("click",()=> {
@@ -43,15 +48,25 @@ btnUpload.addEventListener("click",()=> {
 //Success upload gif window (esto es provisional debe hacerse con timer)
 let btnCancel = document.getElementById("cancel");
 let divSuccess = document.getElementById("success");
-btnCancel.addEventListener("click",()=> {
-  divUpload.classList.toggle("hide");
-  divSuccess.classList.toggle("hide");
-})
+function opensuccess (getLocalGifs) {
+  btnCancel.addEventListener("click",()=> {
+    divUpload.classList.toggle("hide");
+    divSuccess.classList.toggle("hide");
+  })
+}
+setTimeout(opensuccess(),1000);
 //Menu desplegable
 let button = document.getElementById("btn3");
 button.addEventListener('click',function() {
     document.getElementById("menuGrey").classList.toggle("active");
 })
+//Save gif 
+let btnLoad = document.getElementById("download");
+function downloadGif (blob) {
+  btnLoad.addEventListener("click", () => {
+    invokeSaveAsDialog(blob);
+  })
+}
 //Check camera
 var constraints = { audio: false, video: {width: 838}} ;
 function preVideo() {
@@ -99,8 +114,8 @@ function stopVideo () {
     let blob = recorder.getBlob();
     let gifUrl = URL.createObjectURL(blob);
     console.log(blob);
-    console.log(gifUrl);
-    showPreview (gifUrl)
+    showPreview (gifUrl);
+    downloadGif (blob)
   });
 }
 //Previous sreen
@@ -148,12 +163,12 @@ function postGifs (form) {
   else {
     localStorage.setItem(("misGifos"),id);
   }
-  getMyGifs (infoLocal)
+  showSuccess(id)
   };
 //Obtain url myGifs
 var urlGifos = "http://api.giphy.com/v1/gifs?api_key="
-function getUrlGifs (infoLocal) {
-  const myGifsUrl = fetch(urlGifos + apiKey + `&ids=${infoLocal}`)
+function getUrlGifs (ids='') {
+  const myGifsUrl = fetch(urlGifos + apiKey + `&ids=${ids}`)
     .then((response) => {
       return response.json();
     })
@@ -164,27 +179,36 @@ function getUrlGifs (infoLocal) {
   }
 //Show myGifs
 let divMyGifs = document.querySelector("#showGifs");
-async function getMyGifs(infoLocal) {
-  let myGifs = await getUrlGifs (infoLocal);
+async function getMyGifs(getLocalGifs) {
+  let myGifs = await getUrlGifs (getLocalGifs);
   let myGifsData = myGifs.data;
-  console.log(myGifsData);
   let html = "";
   myGifsData.forEach ((gif) => { 
     var clases = ["trendImg","trendImg","bigImg","trendImg","trendImg","trendImg","trendImg"];//Tiene que ser par porque el total es par, sino deja espacios vacios
     let random = clases[Math.floor( Math.random()*clases.length)];
-    let myGifImg = gif.url;
-    console.log(myGifImg);
-    let myGifTitle = gif.title.split("GIF")[0];
+    let myGifImg = gif.images.downsized_medium.url;
     html += 
     `<div class="trendContainer ${random}">
     <img class="trendGif" src="${myGifImg}" alt="trends">
     <div class="nameGif gradient trendTitle">
-    <p class="bold" ># ${myGifTitle}</p>
+    <p class="bold" ># MisGifos</p>
     </div>
     </div>`;
   });
   divMyGifs.innerHTML = html;
 }
+//Show sucess gif
+async function showSuccess(id) {
+  let finalGif = document.getElementById("finalGif");
+  let successGif = await getUrlGifs(id);
+  let dataFirstGif = successGif.data;
+  let firstGif = dataFirstGif[0];
+  let urlFirstGif = firstGif.images.downsized_medium.url;
+  console.log(urlFirstGif);
+  finalGif.setAttribute("src",urlFirstGif);
+}
+//Copy url gif
+let btnCopy = document.getElementById("copy");
 //Change theme
 let root = "http://127.0.0.1:5500/css/";
 let styleDay = "mainFileDay";

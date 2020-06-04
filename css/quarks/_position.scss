@@ -471,4 +471,54 @@ section {
         width: 1200px;
         margin: 0;
     }
+//Show my gifos
+    .ownGifs {
+        height: auto;
+        margin-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .trendContainer {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        margin: 0;
+        bottom: 0;
+        margin-bottom: 16px;
+        }
+        .trendImg {
+            flex-direction: column;
+            margin-bottom: 16px;
+            width: 294px;
+            height: 304px;
+            &:hover .trendTitle {
+                display: block;
+            }
+            }
+        .bigImg {
+            flex-direction: column;
+            margin-bottom: 16px;
+            width: 596px;
+            height: 300px;
+            &:hover .trendTitle {
+                display: block;
+            }
+            }
+        img.trendGif {
+            width: 97.7%;
+            height: 97%;
+            object-fit: cover;
+        }
+        .trendTitle {
+            position: absolute;
+            width: 97.7%;
+            margin: 0;
+            bottom: 4px;
+            display:none;
+            p {
+                padding: 0 0 0 6px;
+            }
+        }
 }

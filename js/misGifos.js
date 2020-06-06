@@ -6,6 +6,7 @@ let btnCreate = document.querySelector(".btn1");
 let btnMyGifs = document.querySelector(".btn4");
 let backHome = document.querySelector(".arrow");
 let createSection = document.querySelector("#crearGifos");
+let btnStyles = document.getElementById("menuGrey");
 //Init myGifs visualization
 window.onload = function() {
   changeDom();
@@ -14,9 +15,14 @@ window.onload = function() {
 //Change DOM acording with button
 function changeDom() {
   const queryString = window.location.search;
+  let cancelCreate = document.getElementById("cancelCreate");
   if(queryString == queryCreate) {
     btnCreate.setAttribute("class","hide");
     btnMyGifs.setAttribute("class","hide");
+    btnStyles.classList.add("menuCreate");
+    cancelCreate.addEventListener("click",()=> {
+      window.location.assign("index.html");
+    })
   }
   else {
     backHome.setAttribute("class","hide");
@@ -78,7 +84,7 @@ setTimeout(opensuccess(),1000);
 //Menu desplegable
 let button = document.getElementById("btn3");
 button.addEventListener('click',function() {
-    document.getElementById("menuGrey").classList.toggle("active");
+    btnStyles.classList.toggle("active");
 })
 //Save gif 
 let btnLoad = document.getElementById("download");

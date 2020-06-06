@@ -225,6 +225,17 @@ section {
         .arrow {
             margin-right: 14px;
         }
+        .menuGrey {
+            z-index: 3;
+            position: absolute;
+            margin-top: 36px;
+            margin-left: 158px;
+            width: 169px;
+            height: 102px;
+            }
+        .menuCreate { 
+            margin-left: 0px;
+        }
     }
     .btn4 {
         margin-left: 16px;
@@ -234,17 +245,6 @@ section {
     }
     .btn2 {
         margin: 0px;
-    }
-    .menuGrey { //debo cambiar las clases de acuerdo a las vistas
-        margin-left: 0px;
-    }
-    .menuGrey {
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        button:first-child {
-            margin-bottom:10px;
-        }
     }
     .crearGifos {
         height: 614px;
@@ -531,4 +531,5 @@ section {
                 padding: 0 0 0 6px;
             }
         }
+        
 }

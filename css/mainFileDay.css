@@ -505,9 +505,8 @@ section {
 }
 
 .misGifos nav {
-  height: 99px;
-  width: 95.8%;
-  margin-left: 4.2%;
+  height: 115px;
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,8 +519,12 @@ section {
   margin-right: 14px;
 }
 
-.misGifos nav div {
-  margin-right: 9.7%;
+.misGifos .btn4 {
+  margin-left: 16px;
+}
+
+.misGifos .btn1 {
+  margin-right: 16px;
 }
 
 .misGifos .btn2 {
@@ -530,6 +533,23 @@ section {
 
 .misGifos .menuGrey {
   margin-left: 0px;
+}
+
+.misGifos .menuGrey {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.misGifos .menuGrey button:first-child {
+  margin-bottom: 10px;
 }
 
 .misGifos .crearGifos {

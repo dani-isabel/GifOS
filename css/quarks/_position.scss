@@ -218,23 +218,33 @@ section {
 //Positions misGifos
 .misGifos {
     nav {
-        height: 99px;
-        width: 95.8%;
-        margin-left: 4.2%;
+        height: 115px;
+        width: 1200px;
         display:flex;
         justify-content: space-between;
         .arrow {
             margin-right: 14px;
         }
-        div {
-            margin-right: 9.7%;
-        }
+    }
+    .btn4 {
+        margin-left: 16px;
+    }
+    .btn1 {
+        margin-right: 16px;
     }
     .btn2 {
         margin: 0px;
     }
-    .menuGrey {
+    .menuGrey { //debo cambiar las clases de acuerdo a las vistas
         margin-left: 0px;
+    }
+    .menuGrey {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        button:first-child {
+            margin-bottom:10px;
+        }
     }
     .crearGifos {
         height: 614px;

@@ -1,12 +1,32 @@
 //Variables
 const apiKey = "u5MxvUvtwc9acidnSviI4nlHRNOIHx44";
 var getLocalGifs = localStorage.getItem("misGifos");
+const queryCreate = "?action=create-gifs";
+let btnCreate = document.querySelector(".btn1");
+let btnMyGifs = document.querySelector(".btn4");
+let backHome = document.querySelector(".arrow");
+let createSection = document.querySelector("#crearGifos");
 //Init myGifs visualization
 window.onload = function() {
-  getMyGifs(getLocalGifs)
+  changeDom();
+  getMyGifs(getLocalGifs);
 };
+//Change DOM acording with button
+function changeDom() {
+  const queryString = window.location.search;
+  if(queryString == queryCreate) {
+    btnCreate.setAttribute("class","hide");
+    btnMyGifs.setAttribute("class","hide");
+  }
+  else {
+    backHome.setAttribute("class","hide");
+    createSection.setAttribute("class","hide");
+    btnCreate.addEventListener("click",()=> {
+      window.location.assign("captura.html?action=create-gifs");
+    })
+  }
+}
 //Come back to index
-let backHome = document.querySelector(".arrow");
 backHome.addEventListener("click",()=> {
   window.location.assign("index.html");
 })
@@ -206,9 +226,22 @@ async function showSuccess(id) {
   let urlFirstGif = firstGif.images.downsized_medium.url;
   console.log(urlFirstGif);
   finalGif.setAttribute("src",urlFirstGif);
+  activeCopy(urlFirstGif);
 }
 //Copy url gif
 let btnCopy = document.getElementById("copy");
+  function activeCopy(urlFirstGif) {
+    btnCopy.addEventListener("click", () => {
+      navigator.clipboard
+          .writeText(urlFirstGif)
+          .then(() => {
+            // console.log(`Text copied to clipboard. ${urlFirstGif}`);
+          })
+          .catch((err) => {
+            console.error(`Failed to copy text. ${err}`);
+          });
+    });
+  }
 //Change theme
 let root = "http://127.0.0.1:5500/css/";
 let styleDay = "mainFileDay";

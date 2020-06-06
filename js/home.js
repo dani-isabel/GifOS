@@ -10,11 +10,11 @@ let initialTag = "https://api.giphy.com/v1/gifs/search/tags?api_key=";
 //Open catura window
 let captura = document.querySelector(".btn1");
 captura.addEventListener("click",()=> {
-  window.location.assign("captura.html"); //Window.location.assign permite abrir una nueva ventana en el index
+  window.location.assign("captura.html?action=create-gifs"); //Window.location.assign permite abrir una nueva ventana en el index
 })
 let seeGifos = document.querySelector(".btn4");
 seeGifos.addEventListener("click",()=> {
-  window.location.assign("captura.html");
+  window.location.assign("captura.html?action=see-gifs");
 })
 //Menu desplegable
 let button = document.getElementById("btn3");

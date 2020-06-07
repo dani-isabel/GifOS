@@ -212,26 +212,25 @@ async function createTagsBtn() {
   })
 }
 //Change theme
-let root = "http://127.0.0.1:5500/css/";
+let root = "./css/";
 let styleDay = "mainFileDay";
 let styleDark = "mainFileDark";
 let type = ".css";
 let linkThemes = document.getElementById("changeThemes");
 let themeDay = document.getElementById("day");
 let themeDark = document.getElementById("night");
-function changeTheme() {
-  if (linkThemes.href ==  root + styleDay + type) {
+function changeDay() {//Revisar porque solo me funciona con onclick
+      linkThemes.setAttribute("href",""+root+""+styleDay+""+type+"");
+      themeDay.setAttribute("class","themeActiveDay");
+      themeDark.setAttribute("class","btnGrey");
+}
+function changeDark() {//Revisar porque solo me funciona con onclick
+  console.log(linkThemes.href);
       linkThemes.setAttribute("href",""+root+""+styleDark+""+type+"");
       themeDark.setAttribute("class","themeActive");
       themeDay.setAttribute("class","btnGrey");
-    }
-  else {
-    linkThemes.setAttribute("href",""+root+""+styleDay+""+type+"");
-    themeDark.setAttribute("class","btnGrey");
-    themeDay.setAttribute("class","themeActiveDay");
-  }
 }
-themeDay.addEventListener("click",changeTheme);
-themeDark.addEventListener("click",changeTheme);
+themeDay.addEventListener("click",changeDay);
+themeDark.addEventListener("click",changeDark);
 
 

@@ -283,7 +283,7 @@ let themeDay = document.getElementById("day");
 let themeDark = document.getElementById("night");
 function changeDay() {//Revisar porque solo me funciona con onclick
       linkThemes.setAttribute("href",""+root+""+styleDay+""+type+"");
-      themeDay.setAttribute("class","themeActive");
+      themeDay.setAttribute("class","themeActiveDay");
       themeDark.setAttribute("class","btnGrey");
 }
 function changeDark() {//Revisar porque solo me funciona con onclick

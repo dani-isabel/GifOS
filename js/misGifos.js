@@ -75,7 +75,7 @@ btnUpload.addEventListener("click",()=> {
     load();
   };
 })
-//Success upload gif window (esto es provisional debe hacerse con timer)
+//Success upload gif window
 let btnCancel = document.getElementById("cancel");
 let divSuccess = document.getElementById("success");
 function startUpload() {
@@ -115,7 +115,7 @@ const stream = navigator.mediaDevices.getUserMedia(constraints)
 .then(function(mediaStream) {
     return mediaStream;
 })
-.catch(function(err) { console.log(err.name + ": " + err.message);
+.catch(function(err) {
     return err;
 });
 return stream
@@ -154,7 +154,6 @@ function stopVideo () {
   recorder.stopRecording ( () => {
     let blob = recorder.getBlob();
     let gifUrl = URL.createObjectURL(blob);
-    console.log(blob);
     showPreview (gifUrl);
     downloadGif (blob)
   });
@@ -185,7 +184,6 @@ function postGifs (form) {
   })
   .then(res => res.json())
   .then((response) => {
-    console.log('Success:', response)
     return response
   })
   .catch(error => console.error('Error:', error))
@@ -244,7 +242,6 @@ async function showSuccess(id) {
   let dataFirstGif = successGif.data;
   let firstGif = dataFirstGif[0];
   let urlFirstGif = firstGif.images.downsized_medium.url;
-  console.log(urlFirstGif);
   finalGif.setAttribute("src",urlFirstGif);
   activeCopy(urlFirstGif);
   startUpload();
@@ -270,10 +267,10 @@ function load() {
   divUp.forEach((up,i) => {
     setTimeout(() => {
       up.style.backgroundColor = "#F7C9F3"
-    }, i * 200);
+    }, i * 400);
     setTimeout(() => {
       up.style.backgroundColor = "#999999"
-    }, 4600);
+    }, 9200);
   })
 }
 //Change theme
@@ -286,11 +283,10 @@ let themeDay = document.getElementById("day");
 let themeDark = document.getElementById("night");
 function changeDay() {//Revisar porque solo me funciona con onclick
       linkThemes.setAttribute("href",""+root+""+styleDay+""+type+"");
-      themeDay.setAttribute("class","themeActiveDay");
+      themeDay.setAttribute("class","themeActive");
       themeDark.setAttribute("class","btnGrey");
 }
 function changeDark() {//Revisar porque solo me funciona con onclick
-  console.log(linkThemes.href);
       linkThemes.setAttribute("href",""+root+""+styleDark+""+type+"");
       themeDark.setAttribute("class","themeActive");
       themeDay.setAttribute("class","btnGrey");

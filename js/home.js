@@ -225,7 +225,6 @@ function changeDay() {//Revisar porque solo me funciona con onclick
       themeDark.setAttribute("class","btnGrey");
 }
 function changeDark() {//Revisar porque solo me funciona con onclick
-  console.log(linkThemes.href);
       linkThemes.setAttribute("href",""+root+""+styleDark+""+type+"");
       themeDark.setAttribute("class","themeActive");
       themeDay.setAttribute("class","btnGrey");

@@ -145,6 +145,7 @@ section .btnActive img {
 
 .misGifos .buttons button:nth-child(2) {
   background-color: #EE3EFE;
+  color: #FFFFFF;
 }
 
 .misGifos .record {
@@ -155,8 +156,23 @@ section .btnActive img {
   width: 36px;
 }
 
+.misGifos .record img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
 .misGifos .itemsBox button {
   background-color: #EE3EFE;
+  color: #FFFFFF;
+}
+
+.misGifos .itemsBox button:hover, .misGifos .itemsBox button:active {
+  background-color: #CE36DB;
+  outline-color: #110038;
+}
+
+.misGifos .itemsBox .btnBig {
+  color: black;
 }
 
 .misGifos .btnReady {
@@ -739,6 +755,27 @@ section {
   width: 124px;
   height: 36px;
   margin: 21px 528px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.misGifos .recordGif .timer p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  line-height: 0px;
+  width: auto;
 }
 
 .misGifos .recordGif .itemsBox {
@@ -767,11 +804,24 @@ section {
   margin: 0;
   width: 240px;
   height: 22px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.misGifos .recordGif .width {
+  width: 324px;
 }
 
 .misGifos .recordGif .endTime {
-  width: 122px;
-  height: 36px;
   margin: 21px 24px 0 0;
 }
 
@@ -1246,6 +1296,10 @@ section .btnGrey:active {
           box-shadow: inset -1px -1px #993A3A, inset 1px 1px #FFFFFF;
 }
 
+.misGifos .recordGif .ready:hover, .misGifos .recordGif .ready:active {
+  background-color: #993A3A;
+}
+
 .misGifos .recordGif .timer, .misGifos .recordGif .endTime, .misGifos .recordGif .uploadInfo {
   background-color: #FFFFFF;
 }
@@ -1258,5 +1312,13 @@ section .btnGrey:active {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+}
+
+.misGifos .var, .misGifos .up {
+  background: #999999;
+  width: 12px;
+  height: 20px;
+  border-right-style: solid;
+  border-color: #B4B4B4;
 }
 /*# sourceMappingURL=mainFileDark.css.map */

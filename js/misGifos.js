@@ -7,6 +7,7 @@ let btnMyGifs = document.querySelector(".btn4");
 let backHome = document.querySelector(".arrow");
 let createSection = document.querySelector("#crearGifos");
 let btnStyles = document.getElementById("menuGrey");
+var state = false;
 //Init myGifs visualization
 window.onload = function() {
   changeDom();
@@ -70,17 +71,31 @@ btnUpload.addEventListener("click",()=> {
   divUpload.classList.toggle("hide");
   divPreview.classList.toggle("hide");
   uploadGif ();
+  for (let i = 0; i < 5; i++) {
+    load();
+  };
 })
 //Success upload gif window (esto es provisional debe hacerse con timer)
 let btnCancel = document.getElementById("cancel");
 let divSuccess = document.getElementById("success");
-function opensuccess (getLocalGifs) {
-  btnCancel.addEventListener("click",()=> {
+function startUpload() {
     divUpload.classList.toggle("hide");
     divSuccess.classList.toggle("hide");
-  })
-}
-setTimeout(opensuccess(),1000);
+    myGifs.classList.toggle("hide");
+  };
+//Repeate gif
+let btnRepeat = document.getElementById("repeat");
+btnRepeat.addEventListener("click", () => {
+  divPreview.classList.toggle("hide");
+  seCreate.classList.toggle("hide");
+  myGifs.classList.toggle("hide");
+})
+//Ready final button
+let readyEnd = document.getElementById("readyEnd");
+readyEnd.addEventListener("click", () => {
+  divSuccess.classList.toggle("hide");
+  seCreate.classList.toggle("hide");
+})
 //Menu desplegable
 let button = document.getElementById("btn3");
 button.addEventListener('click',function() {
@@ -174,7 +189,6 @@ function postGifs (form) {
     return response
   })
   .catch(error => console.error('Error:', error))
-  console.log(infoGif);
   return infoGif
   };
 //Save in localstorage
@@ -233,6 +247,8 @@ async function showSuccess(id) {
   console.log(urlFirstGif);
   finalGif.setAttribute("src",urlFirstGif);
   activeCopy(urlFirstGif);
+  startUpload();
+  state = true;
 }
 //Copy url gif
 let btnCopy = document.getElementById("copy");
@@ -248,6 +264,18 @@ let btnCopy = document.getElementById("copy");
           });
     });
   }
+//Load animation
+function load() {
+  let divUp = [...document.getElementsByClassName("up")];
+  divUp.forEach((up,i) => {
+    setTimeout(() => {
+      up.style.backgroundColor = "#F7C9F3"
+    }, i * 200);
+    setTimeout(() => {
+      up.style.backgroundColor = "#999999"
+    }, 4600);
+  })
+}
 //Change theme
 let root = "http://127.0.0.1:5500/css/";
 let styleDay = "mainFileDay";

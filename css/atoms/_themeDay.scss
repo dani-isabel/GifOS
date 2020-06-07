@@ -126,6 +126,9 @@ section {
             inset 1px 1px $white;
             &:nth-child(2) {
                 background-color: $fill-button;
+                &:hover, &:active {
+                    background-color: #E6BBE2;
+                }   
             }
         }
     }
@@ -142,6 +145,9 @@ section {
     .itemsBox {
         button {
             background-color: $fill-button;
+            &:hover, &:active {
+                background-color: #E6BBE2;
+            }
         }
     }
 }

@@ -362,6 +362,16 @@ section {
             width: 124px;
             height: 36px;
             margin: 21px 528px 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                align-self: center;
+                height: fit-content;
+                margin: 0;
+                line-height: 0px;
+                width: auto;
+            }
         }
         .itemsBox {
             height: 73px;
@@ -382,10 +392,15 @@ section {
             margin:0;
             width: 240px;
             height: 22px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .width {
+            width: 324px;
         }
         .endTime {
-            width: 122px;
-            height: 36px;
             margin: 21px 24px 0 0;
         }
         .chargeVideo {

@@ -8,6 +8,8 @@ let backHome = document.querySelector(".arrow");
 let createSection = document.querySelector("#crearGifos");
 let btnStyles = document.getElementById("menuGrey");
 var state = false;
+let logoDay = document.getElementById("logoDay");
+let logoDark = document.getElementById("logoDark");
 //Init myGifs visualization
 window.onload = function() {
   changeDom();
@@ -27,6 +29,12 @@ function changeDom() {
   }
   else {
     backHome.setAttribute("class","hide");
+    logoDay.addEventListener("click",()=> {
+      window.location.assign("index.html");
+    })
+    logoDark.addEventListener("click",()=> {
+      window.location.assign("index.html");
+    })
     createSection.setAttribute("class","hide");
     btnCreate.addEventListener("click",()=> {
       window.location.assign("captura.html?action=create-gifs");

@@ -36,7 +36,7 @@ body {
   background-color: #3A72DB;
 }
 
-.themeActiveDay {
+.themeActive {
   width: 150px;
   background-color: #FFF4FD;
   border: 1px solid #CCA6C9;
@@ -44,11 +44,11 @@ body {
           box-shadow: inset -1px -1px #E6DCE4, inset 1px 1px #FFFFFF;
 }
 
-.themeActiveDay::first-letter {
+.themeActive::first-letter {
   text-decoration: underline;
 }
 
-.themeActiveDay:hover, .themeActiveDay:active {
+.themeActive:hover, .themeActive:active {
   outline: none;
   background-color: #FFF4FD;
   border: 1px solid #CCA6C9;
@@ -56,7 +56,7 @@ body {
           box-shadow: inset -1px -1px #E6DCE4, inset 1px 1px #FFFFFF;
 }
 
-.themeActiveDay:hover::first-letter, .themeActiveDay:active::first-letter {
+.themeActive:hover::first-letter, .themeActive:active::first-letter {
   text-decoration: underline;
 }
 
@@ -98,15 +98,7 @@ section .btnSearch {
 }
 
 section .btnSearch:active {
-  color: #110038;
-  background-color: #E6BBE2;
-  -webkit-box-shadow: inset -1px -1px #997D97, inset 1px 1px #FFFFFF;
-          box-shadow: inset -1px -1px #997D97, inset 1px 1px #FFFFFF;
-}
-
-section .btnSearch:active img {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  outline: none;
 }
 
 section .btnActive {
@@ -117,6 +109,18 @@ section .btnActive {
 }
 
 section .btnActive img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+section .btnActive:active {
+  color: #110038;
+  background-color: #E6BBE2;
+  -webkit-box-shadow: inset -1px -1px #997D97, inset 1px 1px #FFFFFF;
+          box-shadow: inset -1px -1px #997D97, inset 1px 1px #FFFFFF;
+}
+
+section .btnActive:active img {
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }

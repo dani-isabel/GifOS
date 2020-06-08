@@ -88,14 +88,7 @@ section {
         background-color:$browse-fill;
         color:$browse-shadow;
         &:active {
-            color:$border-button;
-            background-color:#E6BBE2;
-            box-shadow: 
-            inset -1px -1px #997D97,
-            inset 1px 1px $white;
-            img {
-                filter: invert(100%);
-            }
+            outline:none;
         }
     }
     .btnActive {
@@ -106,6 +99,16 @@ section {
             inset 1px 1px $white;
             img {
                 filter: invert(100%);
+            }
+            &:active {
+                color:$border-button;
+                background-color:#E6BBE2;
+                box-shadow: 
+                inset -1px -1px #997D97,
+                inset 1px 1px $white;
+                img {
+                    filter: invert(100%);
+                }
             }
     }
 }

@@ -38,24 +38,37 @@ let suggestMenu = document.getElementById("menuSuggest");
 let buttonsMore = document.getElementsByClassName("tagMore");
 async function searchGif() {
   if (inputSearch.value.length > 2) {
-    createTags()
+    createTags();
     searchBtn.classList.add("btnActive");
     suggestMenu.classList.add("suggestMenu");
     suggestMenu.classList.remove("hide");
-    searchBtn.addEventListener("click",() => {
-      suggestMenu.classList.add("hide");
-      getSearch(inputSearch.value);
-      searchBtn.classList.remove("btnActive");
-      setTimeout(createTagsBtn,1000);
-    });
+    searchBtn.addEventListener("click",makeSearch);
+    inputSearch.addEventListener("keydown", enterSearch);
   }
   else {
     searchBtn.classList.remove("btnActive");
     suggestMenu.classList.add("hide");
     tagsDiv.setAttribute("class","initialSize");
-    deleteTags()
+    deleteTags();
+    searchBtn.removeEventListener("click",makeSearch);
+    inputSearch.removeEventListener("keydown", enterSearch);
   }
 };
+//Enter search
+function enterSearch(e) {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    makeSearch();
+  }
+}
+//Search functions
+function makeSearch() {
+  suggestMenu.classList.add("hide");
+  getSearch(inputSearch.value);
+  searchBtn.classList.remove("btnActive");
+  setTimeout(createTagsBtn,500);
+}
+//Delete tags
 function deleteTags() {
   if (buttonsMore.length > 0) {
     for (let i=0;i <= buttonsMore.length; i++) {
@@ -96,7 +109,6 @@ async function getSuggestions() {
     html = `
     <img class="sugImg" src="${sugImg}" alt="suggestion">
     <button class="btnMore seeMore" data-tag="${cuTitle}">Ver más…</button>`;
-    
     divSuggest[index].innerHTML = html;
     divSuggest[index].addEventListener("click", (e) => {
       if (e.target && e.target.classList.contains("seeMore")) {
@@ -139,7 +151,7 @@ function getSearch (search='') {
     .then((data) => {
       let results = data.data
       let html = "";
-      changeTitle.innerText = "Resultados de la búsqueda";
+      changeTitle.innerText = ("Resultados de la búsqueda ("+ inputSearch.value +")");
       window.location.href = "#changeTitle";
       results.forEach ((result) => {
         var clases = ["trendImg","trendImg","bigImg","trendImg","trendImg","trendImg","trendImg"];//Tiene que ser par porque el total es par, sino deja espacios vacios
